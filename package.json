@@ -1,6 +1,6 @@
 {
-  "name": "@zachary/react-native-baidu-map",
-  "version": "1.0.0",
+  "name": "@zzzkk2009/react-native-baidu-map",
+  "version": "1.0.3",
   "description": "Baidu Map SDK modules and view for React Native(Android & IOS), support react native 0.38+.",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/zzzkk2009/react-native-baidu-map.git"
   },
+  "keywords": [
+    "Baidu Map",
+    "React Native"
+  ],
   "author": "zachary",
   "license": "ISC",
   "bugs": {

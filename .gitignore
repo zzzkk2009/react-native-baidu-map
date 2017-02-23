@@ -35,3 +35,14 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+example/node_modules
+.DS_Store
+.idea
+npm-debug.log
+android/build/
+android/.idea/
+android/gradle/
+android/gradlew
+android/gradlew.bat
+android/local.properties
