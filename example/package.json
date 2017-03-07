@@ -7,9 +7,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@zzzkk2009/react-native-baidu-map": "^1.0.3",
-    "react": "~15.4.0",
-    "react-native": "0.41.2",
+    "@zzzkk2009/react-native-baidu-map": "^1.0.6",
+    "react": "~15.4.1",
+    "react-native": "0.42.0",
     "react-native-dismiss-keyboard": "^1.0.0",
     "react-native-elements": "^0.9.7",
     "react-native-root-toast": "^1.0.3",
@@ -18,8 +18,8 @@
   "devDependencies": {
     "babel-jest": "19.0.0",
     "babel-preset-react-native": "1.9.1",
-    "jest": "19.0.0",
-    "react-test-renderer": "~15.4.0"
+    "jest": "19.0.2",
+    "react-test-renderer": "~15.4.1"
   },
   "jest": {
     "preset": "react-native"

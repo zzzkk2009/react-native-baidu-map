@@ -74,6 +74,7 @@ export default class BaiduMapDemo extends Component {
     })
     Geolocation.getCurrentPosition()
       .then(data => {
+        console.log('getCurrentPosition.data===', data)
         this.setState({
           showLoading: false,
           center: {
@@ -139,7 +140,7 @@ export default class BaiduMapDemo extends Component {
   }
 
   _onRegionDidChangeAnimated4Ios(e) {
-    // console.log('_onRegionDidChangeAnimated4Ios.e====', e)
+    console.log('_onRegionDidChangeAnimated4Ios.e====', e)
     this._onMapStatusChangeFinish4Android(e)
   }
 
@@ -385,7 +386,7 @@ export default class BaiduMapDemo extends Component {
               underlineColorAndroid="transparent"
               containerStyle={[styles.shopInputContainerStyle]}
               inputStyle={[styles.shopInputStyle]}
-              value={this.state.shopAddress}
+              value={this.state.shopAddress || ''}
             />
           </View>
           <CommonButton

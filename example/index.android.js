@@ -11,7 +11,6 @@ import {
   Text,
   View
 } from 'react-native';
-
 import BaiduMapDemo from './BaiduMapDemo'
 
 export default class example extends Component {
