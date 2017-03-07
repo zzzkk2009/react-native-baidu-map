@@ -4,6 +4,8 @@ Baidu Map SDK modules and view for React Native(Android & IOS), support react na
 
 百度地图 React Native 模块，支持 react native 0.40+
 
+类似滴滴,摩拜单车地图效果.
+
 ![Android](https://raw.githubusercontent.com/zzzkk2009/react-native-baidu-map/master/images/android.gif)
 
 ### Install 安装
