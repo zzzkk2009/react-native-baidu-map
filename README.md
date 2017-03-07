@@ -4,8 +4,7 @@ Baidu Map SDK modules and view for React Native(Android & IOS), support react na
 
 百度地图 React Native 模块，支持 react native 0.40+
 
-![Android](https://raw.githubusercontent.com/zzzkk2009/react-native-baidu-map/master/images/android.jpg)
-![IOS](https://raw.githubusercontent.com/zzzkk2009/react-native-baidu-map/master/images/ios.jpg)
+![Android](https://raw.githubusercontent.com/zzzkk2009/react-native-baidu-map/master/images/android.gif)
 
 ### Install 安装
     npm install @zzzkk2009/react-native-baidu-map --save
@@ -32,7 +31,7 @@ project(':zzzkk2009-react-native-baidu-map').projectDir = new File(settingsDir, 
 - Project navigator->Build Phases->Link Binary With Libraries, 添加依赖, node_modules/@zzzkk2009/react-native-baidu-map/ios/lib/BaiduMapAPI下的全部framework和thiridlibs下的全部.a文件,， 以及CoreLocation.framework和QuartzCore.framework、OpenGLES.framework、SystemConfiguration.framework、CoreGraphics.framework、Security.framework、libsqlite3.0.tbd（xcode7以前为 libsqlite3.0.dylib）、CoreTelephony.framework 、libstdc++.6.0.9.tbd（xcode7以前为libstdc++.6.0.9.dylib）、CoreTelephony.framework
 - 工程右键添加"Add Files to '工程'" node_modules/@zzzkk2009/react-native-baidu-map/ios/lib/BaiduMapAPI/BaiduMapAPI_Map.framework/Resources/mapapi.bundle
 
-- 其它一些注意事项可参考百度地图LBS文档
+- [其它一些注意事项可参考百度地图LBS文档](http://lbsyun.baidu.com/index.php?title=iossdk/guide/buildproject)
 
 ##### AppDelegate.m init 初始化
     #import "RCTBaiduMapViewManager.h"
