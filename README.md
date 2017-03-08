@@ -20,16 +20,26 @@ project(':zzzkk2009-react-native-baidu-map').projectDir = new File(settingsDir, 
 - build.gradle `compile project(':zzzkk2009-react-native-baidu-map')`
 
 - MainApplication`new BaiduMapPackage(getApplicationContext())`
-- AndroidMainifest.xml `<meta-data
+- AndroidManifest.xml `<meta-data
             android:name="com.baidu.lbsapi.API_KEY" android:value="xx"/>`
+            
+- AndroidManifest.xml `<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+                       <uses-permission android:name="android.permission.INTERNET"/>
+                       <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+                       <uses-permission android:name="android.permission.WAKE_LOCK"/>
+                       <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+                       <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+                       <uses-permission android:name="android.permission.GET_TASKS" />
+                       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+                       <uses-permission android:name="android.permission.WRITE_SETTINGS" />`            
 
 #### Xcode
 - Project navigator->Libraries->Add Files to 选择 node_modules/@zzzkk2009/react-native-baidu-map/ios/RCTBaiduMap.xcodeproj
 - Project navigator->Build Phases->Link Binary With Libraries 加入 libRCTBaiduMap.a
-- Project navigator->Build Settings->Search Paths， Framework search paths 添加 $(SRCROOT)/../node_modules/@zzzkk2009/react-native-baidu-map/ios/lib(recursive)
-- Project navigator->Build Settings->Search Paths， Header search paths 添加 $(SRCROOT)/../node_modules/@zzzkk2009/react-native-baidu-map/ios/lib(recursive)
-- Project navigator->Build Settings->Search Paths， Header search paths 添加 $(SRCROOT)/../node_modules/@zzzkk2009/react-native-baidu-map/ios/RCTBaiduMap(recursive)
-- Project navigator->Build Settings->Search Paths， Library search paths 添加 $(SRCROOT)/../node_modules/@zzzkk2009/react-native-baidu-map/ios/lib(recursive)
+- Project navigator->Build Settings->Search Paths， Framework search paths 添加 $(SRCROOT)/../node_modules/@zzzkk2009/react-native-baidu-map/ios/lib (选择recursive)
+- Project navigator->Build Settings->Search Paths， Header search paths 添加 $(SRCROOT)/../node_modules/@zzzkk2009/react-native-baidu-map/ios/lib (选择recursive)
+- Project navigator->Build Settings->Search Paths， Header search paths 添加 $(SRCROOT)/../node_modules/@zzzkk2009/react-native-baidu-map/ios/RCTBaiduMap (选择recursive)
+- Project navigator->Build Settings->Search Paths， Library search paths 添加 $(SRCROOT)/../node_modules/@zzzkk2009/react-native-baidu-map/ios/lib (选择recursive)
 - Project navigator->Build Phases->Link Binary With Libraries, 添加依赖, node_modules/@zzzkk2009/react-native-baidu-map/ios/lib/BaiduMapAPI下的全部framework和thiridlibs下的全部.a文件,， 以及CoreLocation.framework和QuartzCore.framework、OpenGLES.framework、SystemConfiguration.framework、CoreGraphics.framework、Security.framework、libsqlite3.0.tbd（xcode7以前为 libsqlite3.0.dylib）、CoreTelephony.framework 、libstdc++.6.0.9.tbd（xcode7以前为libstdc++.6.0.9.dylib）、CoreTelephony.framework
 - 工程右键添加"Add Files to '工程'" node_modules/@zzzkk2009/react-native-baidu-map/ios/lib/BaiduMapAPI/BaiduMapAPI_Map.framework/Resources/mapapi.bundle
 
